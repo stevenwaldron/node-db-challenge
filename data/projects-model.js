@@ -9,6 +9,14 @@ const find = async () => {
     }
 }
 
+// const findByResource = async (req,res) => {
+//     try {
+//         return await db('projects').where({resource:req.params.resource})
+//     }  catch (error) {
+//         res.status(404).json({message:'theres an issue'})
+//     }
+// }
+
 const add = async (project) => {
    try {
     return await db('projects').insert(project)
